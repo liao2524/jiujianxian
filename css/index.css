@@ -180,6 +180,8 @@ ul{
 	margin-left:0px!important;
 }
 .swiper{
+/* 	width: 1200px;
+height: 470px; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -198,12 +200,106 @@ ul{
 .left-menu:hover{
 	border-left:2px solid #CE171F;
 }
-.menu1{
+.nav-menu{
 	display: inline-block;
 	width:14px;
 	height:20px;
 	background: #f00;
 	margin-right:10px;
 	vertical-align: middle;
+}
+.left-menu{
+	padding-left:15px;
+	line-height: 30px;
+	border-bottom:1px solid #ccc;
+	position: relative;
+}
+.left-menu:hover{
+	cursor: pointer;
+	background-color: rgb(255, 255, 255);
+}
+.menu1{
 	background: url('../img/public-24.png') -73px -260px;
+}
+.menu2{
+	background: url('../img/public-24.png') 2px -100px;
+}
+.menu3{
+	background: url('../img/public-24.png') -16px -102px;
+}
+.menu4{
+	background: url('../img/public-24.png') -37px -100px;
+}
+
+
+/*选酒menu*/
+.menu-content{
+	width: 640px;
+	height: 470px;
+	background: #fff;
+	position: absolute;
+	top:0px;
+	left:150px;
+	color:#000;
+	display: none;
+	z-index:2;
+}
+.menu-content-active{
+	/*display: block;*/
+}
+.menu-content-left{
+	width:400px;
+	height:470px;
+	padding: 0 20px 0 0;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+}
+.menu-item{
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+}
+.menu-content-right{
+	width:220px;
+	height:470px;
+	float: right;
+}
+
+.menu-item-title{
+	width:80px;
+	text-align: center;
+}
+
+.menu-itemCon{
+	width:280px;
+	border-bottom:1px dotted #ccc;
+	margin-left:40px;
+}
+
+.menu-itemCon a{
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.menu-coating{
+	width:80px;
+	height:470px;
+	background: #eee;
+	float: left;
+	position: absolute;
+}
+/*轮播图*/
+.swiper-container{
+	margin: 0 0;
+}
+/* .swiper1{
+	display: none;
+} */
+/*轮播图右边AD*/
+.swiper-container2 .swiper-wrapper{
+	overflow: hidden;
+	width: 190px;
+	height: 470px;
 }
