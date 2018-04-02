@@ -18,7 +18,7 @@ body{
 	background: #F9F9F9;
 	overflow-x: hidden;
 }
-ul{
+ul {
 	list-style: none;
 }
 .toper{
@@ -180,22 +180,37 @@ ul{
 	margin-left:0px!important;
 }
 .swiper{
-/* 	width: 1200px;
-height: 470px; */
-	display: flex;
+ 	width: 1200px;
+	height: 470px;
+	margin: 0 auto; 
+	position: relative;
+	/* display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: center; */
 }
 .swiper-left{
 	width:150px;
 	height:470px;
+	box-sizing: border-box;
 	background: #fff;
 	border-left:1px solid #ccc;
 	border-bottom:1px solid #ccc;
+	float: left;
 }
 .swiper-container{
 	height:470px;
 	width:1050px;
+	margin: 0 0;
+}
+/*轮播图*/
+/*轮播图右边AD*/
+.swiper-container2{
+	position: absolute;
+	right: 0;
+	top: 0; 
+	overflow: hidden;
+	width: 190px;
+	height: 470px;
 }
 .left-menu:hover{
 	border-left:2px solid #CE171F;
@@ -212,12 +227,11 @@ height: 470px; */
 	padding-left:15px;
 	line-height: 30px;
 	border-bottom:1px solid #ccc;
-	position: relative;
 }
-.left-menu:hover{
+ .left-menu:hover{
 	cursor: pointer;
-	background-color: rgb(255, 255, 255);
-}
+	background-color: #eee;
+} 
 .menu1{
 	background: url('../img/public-24.png') -73px -260px;
 }
@@ -233,20 +247,21 @@ height: 470px; */
 
 
 /*选酒menu*/
+.swiper-left ul{
+	position: relative;
+}
 .menu-content{
 	width: 640px;
 	height: 470px;
 	background: #fff;
 	position: absolute;
 	top:0px;
-	left:150px;
+	left:147px;
 	color:#000;
-	display: none;
 	z-index:2;
+	display: none;
 }
-.menu-content-active{
-	/*display: block;*/
-}
+
 .menu-content-left{
 	width:400px;
 	height:470px;
@@ -290,16 +305,89 @@ height: 470px; */
 	float: left;
 	position: absolute;
 }
-/*轮播图*/
-.swiper-container{
-	margin: 0 0;
+
+/*内容1区*/
+.cententOne{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 10px;
 }
-/* .swiper1{
-	display: none;
-} */
-/*轮播图右边AD*/
-.swiper-container2 .swiper-wrapper{
-	overflow: hidden;
-	width: 190px;
-	height: 470px;
+.cententOne-left{
+	height: 500px;
+	width: 920px;
+	margin-right: 10px;
+	position: relative;
 }
+.cententOne-left ul{
+	display: flex;
+	flex-direction: row;
+}
+.adBox-title{
+	width: 183px;
+	line-height: 38px;
+	color: #666;
+	font-size: 16px;
+	text-align: center;
+	background: #f9f9f9;
+	border: 1px solid #ececec;
+	border-top-width: 2px
+}
+.adBox-title:hover{
+	background: #fff;
+    cursor: pointer;
+    color: #c00;
+    border-top-color: #c00;
+}
+.adBox-list{
+	height: 460px;
+	width: 920px;
+	background: #fff;
+	
+	position: absolute;
+	left: 0;
+	top: 41px;
+}
+.adBox{
+	width: 182px;
+	margin-top: 14px;
+}
+.adBox-pic{
+	width: 160px;
+	padding: 0 11px;
+	position: relative;
+}
+.adBox-pic-tag{
+	width: 45px;
+    height: 55px;
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    right: 0px;
+    background: url(../img/TagBg.png) no-repeat;
+    text-align: center;
+}
+.adBox-pic-tag span{
+	line-height: 14px;
+	display: inline-block;
+	width: 43px;
+	height: 28px;
+	font-size: 12px;
+	margin-top: 7px;
+}
+.adBox-tit{
+	width: 170px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.adBox-tit{
+	color: #c00;
+}
+
+.cententOne-right{
+	height: 500px;
+	width: 270px;
+}
+
+
