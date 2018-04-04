@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	swiper();
-	swiper2();
 	xuanjiu();
+	changeAdBox();
 });
 
 // 初始化swiper
@@ -15,10 +15,17 @@ function swiper() {
           el: '.swiper-pagination',
         },
     });
-}
-//初始化swiper2
-function swiper2() {
-	var mySwiper = new Swiper ('.swiper-container2', {
+    var mySwiper2 = new Swiper ('.swiper-container2', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+    });
+	var mySwiper3 = new Swiper ('.swiper-container3', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+    });
+    var mySwiper4 = new Swiper ('.swiper-container4', {
         direction: 'horizontal',
         loop: true,
         autoplay: true,
@@ -30,5 +37,16 @@ function xuanjiu() {
 		$(this).children('.menu-content').show();
 	}, function() {
 		$(this).children('.menu-content').hide();
+	});
+}
+
+// 内容1切换效果
+function changeAdBox() {
+	$('.adBox-title').hover(function() {
+		$('.adBox-list').removeClass('adBox-list-active');
+		$('.adBox-title').addClass('adBox-title-active');
+		$(this).removeClass('adBox-title-active');
+
+		$(this).children('.adBox-list').addClass('adBox-list-active');
 	});
 }

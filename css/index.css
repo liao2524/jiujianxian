@@ -18,7 +18,7 @@ body{
 	background: #F9F9F9;
 	overflow-x: hidden;
 }
-ul {
+ul,li{
 	list-style: none;
 }
 .toper{
@@ -317,6 +317,8 @@ ul {
 	height: 500px;
 	width: 920px;
 	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
 	position: relative;
 }
 .cententOne-left ul{
@@ -333,7 +335,7 @@ ul {
 	border: 1px solid #ececec;
 	border-top-width: 2px
 }
-.adBox-title:hover{
+.adBox-title:hover,.adBox-title-active{
 	background: #fff;
     cursor: pointer;
     color: #c00;
@@ -343,10 +345,14 @@ ul {
 	height: 460px;
 	width: 920px;
 	background: #fff;
-	
 	position: absolute;
 	left: 0;
 	top: 41px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.adBox-list-active{
+	z-index: 1
 }
 .adBox{
 	width: 182px;
@@ -375,6 +381,11 @@ ul {
 	font-size: 12px;
 	margin-top: 7px;
 }
+.adBox-price p{
+	line-height: 26px;
+	height: 26px;
+	color: #c00;
+}
 .adBox-tit{
 	width: 170px;
     height: 18px;
@@ -389,5 +400,42 @@ ul {
 	height: 500px;
 	width: 270px;
 }
-
-
+.cententOne-right ul{
+	display: flex;
+	flex-direction: row;
+}
+.adBox-new-list{
+	height: 105px;
+	width: 270px;
+	background: #fff;
+	position: absolute;
+	left: 0px;
+	top: 41px;
+}
+.adBox-new-list ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.adBox-new-list ul li{
+	width: 135px;
+	text-align: center;
+	line-height: 28px;
+	margin-top: 5px;
+}
+.adBox-new-title{
+	position: relative;
+	width: 133px;
+	height: 38px;
+}
+.swiper-container3{
+	overflow: hidden;
+	height: 157px;
+	margin-top: 10px;
+	background: #ccc;
+}
+.swiper-container4{
+	overflow: hidden;
+	margin-top: 10px;
+    height: 178px;
+    background: #ccc;
+}
