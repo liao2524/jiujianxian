@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	swiper();
+    swiper5();      
 	xuanjiu();
 	changeAdBox();
 });
@@ -13,6 +14,7 @@ function swiper() {
         
         pagination: {
           el: '.swiper-pagination',
+          clickable :true,
         },
     });
     var mySwiper2 = new Swiper ('.swiper-container2', {
@@ -30,14 +32,19 @@ function swiper() {
         loop: true,
         autoplay: true,
     });
+}
+function swiper5() {
     var mySwiper5 = new Swiper ('.swiper-container5', {
         direction: 'horizontal',
         loop: true,
         autoplay: true,
         pagination: {
             el: '.swiper-pagination5',
+            clickable :true,
           },
     });
+    mySwiper5.pagination.$el.addClass('pagination5'); //为分页器增加样式
+    
 }
 //选酒
 function xuanjiu() {
