@@ -306,14 +306,20 @@ ul,li{
 	position: absolute;
 }
 
+
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 /*内容1区*/
-.cententOne{
+.contentOne{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	margin-top: 10px;
 }
-.cententOne-left{
+.contentOne-left{
 	height: 500px;
 	width: 920px;
 	margin-right: 10px;
@@ -321,7 +327,7 @@ ul,li{
 	flex-direction: column;
 	position: relative;
 }
-.cententOne-left ul{
+.contentOne-left ul{
 	display: flex;
 	flex-direction: row;
 }
@@ -335,7 +341,7 @@ ul,li{
 	border: 1px solid #ececec;
 	border-top-width: 2px
 }
-.adBox-title:hover,.adBox-title-active{
+.adBox-title-active{
 	background: #fff;
     cursor: pointer;
     color: #c00;
@@ -396,13 +402,19 @@ ul,li{
 	color: #c00;
 }
 
-.cententOne-right{
+.contentOne-right{
 	height: 500px;
 	width: 270px;
 }
-.cententOne-right ul{
+.contentOne-right ul{
 	display: flex;
 	flex-direction: row;
+}
+.newBox{
+	height: 140px;
+	width: 270px;
+	overflow: hidden;
+	position: relative;
 }
 .adBox-new-list{
 	height: 105px;
@@ -423,7 +435,6 @@ ul,li{
 	margin-top: 5px;
 }
 .adBox-new-title{
-	position: relative;
 	width: 133px;
 	height: 38px;
 }
@@ -438,4 +449,80 @@ ul,li{
 	margin-top: 10px;
     height: 178px;
     background: #ccc;
+}
+
+/*内容2样式*/
+
+.contentTow{
+    margin-top: 10px;
+}
+.contentTowMain{
+	margin: 0 auto;
+	height: 130px;
+	width: 1200px;
+    background: url(../img/9d405c8262b8462293dad10268b81e12.jpg) no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ 
+
+ /*内容3样式*/
+.contentThere{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.contentThereMian{
+	width: 1200px;
+	height: 257px;
+	overflow: hidden;
+}
+.contentThere span{
+	font-size: 17px;
+	color: #888;
+}
+.newIndexIcon{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url(../img/newIndexIcon-24.png) no-repeat 0px 0px;
+	vertical-align: middle;
+	margin-top: -7px;
+}
+.raceList{
+	margin-top: 10px;
+	width: 1200px;
+	height: 257px;
+	background: #fff;
+}
+.raceList ul li{
+	margin-left: 1px;
+	float: left;
+	width: 178px;
+	height: 237px;
+	background: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.raceListPic{
+width: 160px;
+height: 160px;
+margin-left: 10px;
+}
+.raceListTit{
+	width: 180px;
+	height: 18px;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.raceListPrice{
+	color: #c00;
 }

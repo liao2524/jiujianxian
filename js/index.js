@@ -30,6 +30,14 @@ function swiper() {
         loop: true,
         autoplay: true,
     });
+    var mySwiper5 = new Swiper ('.swiper-container5', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        pagination: {
+            el: '.swiper-pagination5',
+          },
+    });
 }
 //选酒
 function xuanjiu() {
@@ -43,10 +51,9 @@ function xuanjiu() {
 // 内容1切换效果
 function changeAdBox() {
 	$('.adBox-title').hover(function() {
-		$('.adBox-list').removeClass('adBox-list-active');
-		$('.adBox-title').addClass('adBox-title-active');
-		$(this).removeClass('adBox-title-active');
-
-		$(this).children('.adBox-list').addClass('adBox-list-active');
-	});
+        $('.adBox-title').removeClass('adBox-title-active');
+        $(this).addClass('adBox-title-active');
+		$('.adBox-title').removeClass('adBox-list-active');
+        $(this).addClass('adBox-list-active');
+    	});
 }
