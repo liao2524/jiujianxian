@@ -485,11 +485,23 @@ ul,li{
 	color: #888;
 }
 .pagination5{
-	width: 68px;
+	width: 100px;
 	height: 22px;
 	position: absolute;
+	left: 1100px;
 	top: 0;
-	left: 0;
+}
+.pagination5-answered{
+	display: inline-block;
+	vertical-align: middle;
+	width: 9px;
+	height: 9px;
+	background: #ccc;
+	margin-left: 14px;
+	cursor: pointer;
+}
+.pagination5-active{
+	background: #c00;
 }
 .newIndexIcon{
 	width: 20px;
@@ -534,3 +546,234 @@ ul,li{
 .raceListPrice{
 	color: #c00;
 }
+
+/*白酒管*/
+.contentTavern{
+	/*width: 1200px;*/
+	height: 679px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.tavernTop{
+	height: 30px;
+	width: 1200px;
+}
+.tavernMid{
+	border-top: 2px solid #c00;
+	height: 485px;
+	width: 1200px;
+}
+.tavernBot{
+	height: 162px;
+	width: 1200px;
+}
+.tavernTitle {
+    margin-left: 10px;
+    float: left;
+}
+.tavernTitleIcon{
+    width: 28px;
+    height: 29px;
+    display: inline-block;
+    background: url(../img/newIndexIcon-24.png) no-repeat 0px -95px;
+    vertical-align: middle;
+    margin-top: -7px;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-size: 17px;
+}
+.tavernTitle span {
+    font-size: 17px;
+    color: #888;
+}
+.tavernMenu{
+    float: right;
+     margin-right: 10px; 
+}
+.tavernMenu ul li {
+    float: right;
+    margin: 0 5px;
+}
+.tavernMidLeft{
+	width: 210px;
+	height: 485px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.tavernMidRight{
+	width: 988px;
+    height: 485px;
+    background: #fff;
+    float: right;
+
+}
+.tavernMidRight ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.tavernMidRight ul li{
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width: 186px;
+	height: 231px;
+	padding: 5px 5px;
+}
+.tavernMidRight ul li .raceListTit{
+	margin: 10px 0;
+}
+.pagination6-answered{
+	padding: 0px 5px;
+	text-decoration: none;
+	color: #fff;
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	opacity: 0.9;
+	color: #000;
+	padding: 0px 5px;
+}
+.pagination6-active{
+	font-weight: bold;
+    background: #920000;
+    border: 1px solid #610000;
+    border-radius: 3px;
+    opacity: 1;
+    color: #fff;
+    padding: 0px 5px;
+}
+.pagination6{
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	left: 110px;
+	bottom: 0px;
+	z-index: 1;
+	text-align: center;
+	line-height: 40px;
+}
+.recommendBox{
+	width: 187px;
+	height: 132px;
+	padding: 20px 10px 10px 14px;
+	float: left;
+	background: #fff;
+}
+.recommendBox h3 {
+    font-size: 14px;
+    color: #c00;
+}
+.recommendBox h3 i {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: #c00;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.recommendBox p {
+    margin-left: 10px;
+}
+.recommendBox p a {
+    font-size: 12px;
+    margin-right: 6px;
+    width: 50px;
+    display: inline-block;
+}
+.topTenBox {
+    margin-top: 1px;
+    width: 988px;
+    height: 162px;
+    float: right;
+    background: #fff;
+}
+.topTenBox .top {
+    height: 32px;
+    padding: 0px 10px;
+    line-height: 32px;
+    background: #fff;
+}
+
+.topTenBox .top .left{
+	float: left;
+}
+.topTenBox .top .left i {
+    width: 11px;
+    height: 13px;
+    background: url(../img/newIndexIcon-24.png) no-repeat -38px 0px;
+    display: inline-block;
+    line-height: 13px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.topTenBox .top .left span{
+	color: #888;
+}
+.topTenBox .top .right{
+    float: right;
+}
+.topTenBox .top .right .active a{
+	color: #c00; 
+}
+.topTenBox .top .right ul li {
+    float: left;
+    margin-left: 10px;
+}
+.topTenBox .bot {
+    width: 988px;
+    height: 130px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.topTenBox .bot .active{
+	z-index: 1;
+}
+.typeList{
+	width: 988px;
+	height: 105px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.typeList ul  {
+    display: flex;
+    flex-direction: row;
+}
+.typeList ul li {
+	width: 197px;
+	height: 105px;
+    display: flex;
+    flex-direction: row;
+}
+.topTenPic {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.topTenTitBox{
+	float: right;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 80px;
+}
+.topTenTitBox a {
+    font-size: 12px;
+}
+.topTenTitBox p {
+    color: #c00;
+    font-size: 15px;
+}
+/* .swiper-container7{
+	overflow: hidden;	
+}
+.pagination7-active a{
+	color: #c00;
+}
+.pagination7-answered{
+	color: #888;
+} */
