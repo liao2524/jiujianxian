@@ -242,7 +242,7 @@ app.get('/tavernData', function(req, response) {
     							'江苏',
     							'山东',
     							'安徽'];
-   	tavernEntry.loopImgArrs = ['http://img06.jiuxian.com/bill/2018/0316/51ad130653cd4ffb98dabfe8465b9cfa.jpg'];
+   	tavernEntry.loopImgArrs = ['http://img06.jiuxian.com/bill/2018/0316/51ad130653cd4ffb98dabfe8465b9cfa.jpg','http://img09.jiuxian.com/bill/2018/0330/438d2be6be7147f3b0a560f933c7aef0.jpg'];
    	tavernEntry.hotRecomArrs = ['整箱够', '婚庆用酒', '大坛专场'];
    	tavernEntry.beautyPlace = ['茅台', '五粮液', '剑南春', '汾酒', '郎酒', '泸州老窖'];
 

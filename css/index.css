@@ -460,7 +460,7 @@ ul,li{
 	margin: 0 auto;
 	height: 130px;
 	width: 1200px;
-    background: url(../img/9d405c8262b8462293dad10268b81e12.jpg) no-repeat;
+    background: url(../img/cf6df668bfe74abdaa596e3e0c2ae3f5.jpg) no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -517,7 +517,7 @@ ul,li{
 	height: 257px;
 	background: #fff;
 }
-.raceList ul li{
+.raceList li{
 	margin-left: 1px;
 	float: left;
 	width: 178px;
@@ -596,6 +596,9 @@ ul,li{
 .tavernMenu ul li {
     float: right;
     margin: 0 5px;
+}
+.tavernMenu ul li a:hover{
+	color: #c00;
 }
 .tavernMidLeft{
 	width: 210px;
