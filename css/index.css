@@ -175,12 +175,12 @@ ul,li{
 }
 .nav-all{
 	background: #ce171f;
-	width:150px;
+	width:190px;
 	text-align: center;
 	margin-left:0px!important;
 }
 .swiper{
- 	width: 1200px;
+ 	width: 1349px;
 	height: 470px;
 	margin: 0 auto; 
 	position: relative;
@@ -188,25 +188,32 @@ ul,li{
 	flex-direction: row;
 	justify-content: center; */
 }
+.swiper1 img{
+	width: 1349px;
+	height: 470px;
+}
 .swiper-left{
-	width:150px;
+	width:190px;
 	height:470px;
 	box-sizing: border-box;
 	background: #fff;
 	border-left:1px solid #ccc;
 	border-bottom:1px solid #ccc;
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 75px;
+	z-index: 2;
 }
 .swiper-container{
 	height:470px;
-	width:1050px;
+	width:13490px;
 	margin: 0 0;
 }
-/*轮播图*/
+
 /*轮播图右边AD*/
 .swiper-container2{
 	position: absolute;
-	right: 0;
+	right: 75px;
 	top: 0; 
 	overflow: hidden;
 	width: 190px;
@@ -224,9 +231,7 @@ ul,li{
 	vertical-align: middle;
 }
 .left-menu{
-	padding-left:15px;
-	line-height: 30px;
-	border-bottom:1px solid #ccc;
+	width: 190px;
 }
  .left-menu:hover{
 	cursor: pointer;
@@ -247,6 +252,21 @@ ul,li{
 
 
 /*选酒menu*/
+.catItemCon{
+	width: 163px;
+	height: 81px;
+	padding: 0 10px;
+	border-left: 3px solid #fff;
+}
+.catItemCon span{
+	line-height: 32px;
+	height: 32px;
+	font-size: 14px;
+	overflow: hidden;
+	font-weight: normal;
+	padding-top: 3px;
+	color: #333;
+}
 .swiper-left ul{
 	position: relative;
 }
@@ -256,12 +276,37 @@ ul,li{
 	background: #fff;
 	position: absolute;
 	top:0px;
-	left:147px;
+	left:190px;
 	color:#000;
 	z-index:2;
 	display: none;
 }
-
+.categoryCon{
+	width: 163px;
+	overflow: hidden;
+	position: relative;
+}
+.categoryCon p{
+	width: 170px;
+	height: 20px;
+	overflow: hidden;
+}
+.categoryCon p a{
+	display: inline-block;
+	height: 16px;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0 4px;
+	color: #666;
+	float: left;
+	margin: 2px 3px 2px 0;
+}
+.categoryCon p a.on{
+	background: #f90;
+	color: #fff;
+	border-radius: 3px;
+	line-height: 16px;
+}
 .menu-content-left{
 	width:400px;
 	height:470px;
@@ -293,11 +338,14 @@ ul,li{
 	margin-left:40px;
 }
 
+
 .menu-itemCon a{
 	margin-right: 20px;
 	display: inline-block;
 }
-
+.menu-itemCon a.on{
+	color: #c00;
+}
 .menu-coating{
 	width:80px;
 	height:470px;
@@ -310,7 +358,7 @@ ul,li{
 .content{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 }
 /*内容1区*/
 .contentOne{
@@ -340,6 +388,9 @@ ul,li{
 	background: #f9f9f9;
 	border: 1px solid #ececec;
 	border-top-width: 2px
+}
+.adBox-title span{
+	font-size: 16px;
 }
 .adBox-title-active{
 	background: #fff;
@@ -455,6 +506,8 @@ ul,li{
 
 .contentTow{
     margin-top: 10px;
+    height: 130px;
+    width: 1200px;
 }
 .contentTowMain{
 	margin: 0 auto;
@@ -549,7 +602,7 @@ ul,li{
 
 /*白酒管*/
 .contentTavern{
-	/*width: 1200px;*/
+	width: 1200px;
 	height: 679px;
 	margin-top: 20px;
 	display: flex;

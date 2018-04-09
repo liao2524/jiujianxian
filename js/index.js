@@ -1,13 +1,3 @@
-$(document).ready(function() {
-  xuanjiu();
-  discountData();
-  tavernChange();
-  changeAdBox();
-  changeActive();
-  activityData();
-	swiper();
-});
-
 
 
 
@@ -89,7 +79,7 @@ function creatediscountBox(listIndex,countLi,dataList) {
       }
 }
 //白酒管
-function tavernChange() {
+function tavernData() {
   $.get('http://localhost:8081/tavernData', function(data) {
     var tavernData = JSON.parse(data);
     var dataArrays = tavernData.data;
@@ -129,6 +119,58 @@ function tavernChange() {
       $('.tavernMidRight ul').append(html_li);
       }
   });
+}
+//获取广告Box数据
+function adBoxData() {
+    $.get('http://localhost:8081/mulCategoryData', function(data) {
+      var adBoxData = JSON.parse(data);
+      var dataList = adBoxData.data;
+      for (var i = 0; i < dataList.length; i++) {
+        console.log(dataList.length);
+        var category = dataList[i].categoryEntryList;
+        var html_title = '<span>'+dataList[i].name+'</span>';
+        $('.contentOne-left .adBox-title').eq(i).append(html_title);
+        
+        for (var j = 0; j < category.length; j++) {
+        console.log(category.length);
+
+          var imgUrl = category[j].imgUrl;
+          var des = category[j].des;
+          var price = category[j].price;
+          var html_box = '<div class="adBox">'+
+                              '<div class="adBox-pic">'+
+                                '<a href=""><img src="'+imgUrl+'" alt=""></a>'+
+                                '<p class="adBox-pic-tag">'+
+                                    '<span>秒杀<br>包邮</span>'+
+                                '</p>'+
+                              '</div>'+
+                              '<div class="adBox-tit">'+
+                                  '<a href="">'+des+'</a>'+
+                              '</div>'+
+                              '<div class="adBox-price">'+
+                                  '<p>￥'+price+'</p>'+
+                              '</div>'+
+                          '</div>';
+          $('.contentOne-left .adBox-list').eq(i).append(html_box);
+        }
+      }
+      
+    });
+}
+//获取轮播图数据
+function swiperData() {
+    $.get('http://localhost:8081/loopDataList', function(data) {
+      var swiperData = JSON.parse(data);
+      var dataList = swiperData.data;
+      for (var i = 0; i < dataList.length; i++) {
+        var html_slide = '<div class="swiper-slide">'+
+                           ' <a href="#">'+
+                              '<img src="'+dataList[i].loopImgUrl+'" alt="" />'+
+                            '</a>' + 
+                          '</div>';
+        $('.swiper1').append(html_slide );
+      }
+    });
 }
 
 // 初始化swiper
@@ -216,3 +258,15 @@ function swiper() {
     });
     mySwiper6.pagination.$el.addClass('pagination6'); //为分页器增加样式
 }
+$(document).ready(function() {
+  xuanjiu();
+  discountData();
+  tavernData();
+  activityData();
+  adBoxData();
+  swiperData();
+  changeAdBox();
+  changeActive();
+  swiper();
+});
+
