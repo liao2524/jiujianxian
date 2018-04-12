@@ -24,7 +24,7 @@ var loopImgArrs = [
 var loopPrompImgArrs = [
 	'http://img10.jiuxian.com/bill/2017/1127/b5bb8b4be445443094e894fdb4abb9b6.jpg',
 	'http://img06.jiuxian.com/bill/2017/1115/df8f4e868bec46fdbcb967a9e5ef8a49.png',
-	'http://img06.jiuxian.com/bill/2017/1115/df8f4e868bec46fdbcb967a9e5ef8a49.png',
+	'http://img09.jiuxian.com/bill/2017/1124/4b50a100659141e483691d20ce165eb0.png',
 	'http://img09.jiuxian.com/bill/2017/1124/7b1a1bf0d96e4bb0b756b1f249aed0c1.png',
 	'http://img10.jiuxian.com/bill/2017/1115/31ff2840b8084acf9bb4ee6b94ae4b0c.png',
 	'http://img10.jiuxian.com/bill/2017/1127/b5bb8b4be445443094e894fdb4abb9b6.jpg'

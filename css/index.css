@@ -172,12 +172,25 @@ ul,li{
 	margin-left:30px;
 	cursor: pointer;
 	color:#fff;
+	position: relative;
 }
 .nav-all{
 	background: #ce171f;
 	width:190px;
 	text-align: center;
 	margin-left:0px!important;
+}
+.nav li .hot {
+	background: url(../img/public-24.png) no-repeat 0 -264px;
+    display: block;
+    font-size: 0;
+    height: 17px;
+    line-height: 0;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+    width: 29px;
+    z-index: 203;
 }
 .swiper{
  	width: 1349px;

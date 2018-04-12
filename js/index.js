@@ -87,7 +87,7 @@ function tavernData() {
     var loopImgArrs = dataArrays.loopImgArrs;//右边轮播图数据
     for (var i = 0; i < loopImgArrs.length; i++) {
       var html = '<a href=""><img src="'+loopImgArrs[i]+'" alt=""></a>';
-      $('.swiper6').eq(i+1).append(html);
+      $('.swiper6').eq(i).append(html);
     }
 
     var hotRecomArrs = dataArrays.hotRecomArrs;//热门推荐数据
@@ -126,13 +126,11 @@ function adBoxData() {
       var adBoxData = JSON.parse(data);
       var dataList = adBoxData.data;
       for (var i = 0; i < dataList.length; i++) {
-        console.log(dataList.length);
         var category = dataList[i].categoryEntryList;
         var html_title = '<span>'+dataList[i].name+'</span>';
         $('.contentOne-left .adBox-title').eq(i).append(html_title);
         
         for (var j = 0; j < category.length; j++) {
-        console.log(category.length);
 
           var imgUrl = category[j].imgUrl;
           var des = category[j].des;
@@ -170,28 +168,46 @@ function swiperData() {
                           '</div>';
         $('.swiper1').append(html_slide );
       }
+      for (var j = 0; j < dataList.length; j++) {
+          var loopPromptImgArrs = dataList[j].loopPromptImgArrs;
+        for (var n = 0; n < loopPromptImgArrs.length; n++) {
+          console.log(loopPromptImgArrs.length);
+          $('.slide2').eq(j)
+                      .find('img').eq(n)
+                      .attr('src', loopPromptImgArrs[n]);
+        }
+      }
+
+      var mySwiper1 = new Swiper ('.swiper-container', {
+            effect : 'fade',
+            autoplay: true,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable :true,
+            },
+            controller: {
+                control: mySwiper2, //控制Swiper1
+              },
+        });
+      
+        var mySwiper2 = new Swiper ('.swiper-container2', {
+            effect : 'fade',
+            autoplay: true,
+            loop: true,
+            controller: {
+                control: mySwiper1, //控制Swiper1
+              },
+        });
+      mySwiper1.controller.control = mySwiper2;//Swiper1控制Swiper2，需要在Swiper2初始化后
     });
 }
 
 // 初始化swiper
 function swiper() {
-  var mySwiper = new Swiper ('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-        autoplay: true,
-        
-        pagination: {
-          el: '.swiper-pagination',
-          clickable :true,
-        },
-    });
-    var mySwiper2 = new Swiper ('.swiper-container2', {
-        direction: 'horizontal',
-        loop: true,
-        autoplay: true,
-    });
+ 
   var mySwiper3 = new Swiper ('.swiper-container3', {
-        direction: 'horizontal',
+        effect : 'fade',
         loop: true,
         autoplay: true,
     });
@@ -235,7 +251,6 @@ function swiper() {
 
     var mySwiper6 = new Swiper ('.swiper-container6', {
         direction: 'horizontal',
-        loop: true,
         autoplay: true,
         pagination: {
           el: '.swiper-pagination6',
