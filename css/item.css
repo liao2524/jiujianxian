@@ -23,13 +23,15 @@ body{
 .intro{
 	width: 1200px;
 	height: 572px;
+	box-sizing: border-box;
 	border: 1px solid #f2f2f2;
 }
 .imgShow{
 	float: left;
+	width: 440px;
+	height: 570px;
 }
 .jqzoomWrap {
-    border: 1px solid #BBBBBB;
     cursor: pointer;
     padding: 0;
     position: relative;
@@ -73,7 +75,7 @@ body{
 .introInfo {
     width: 548px;
     min-height: 533px;
-    padding: 20px 0 10px 20px;
+    padding: 20px 0 10px 10px;
     border-right: 0;
     float: left;
 }
@@ -270,3 +272,227 @@ body{
     right: 0;
     bottom: 0;
 }
+.bayNumBox {
+    margin-bottom: 28px;
+    float: left;
+    width: 587px;
+    line-height: 30px;
+}
+.buyNum {
+    float: left;
+    width: 66px;
+    height: 30px;
+    position: relative;
+}
+.buyNum input {
+    float: left;
+    width: 26px;
+    height: 28px;
+    line-height: 28px;
+    color: #666;
+    font-family: "Microsoft YaHei";
+    padding: 0 8px;
+    border: 1px solid #999;
+}
+.buyNum .buyNum-btn {
+    width: 17px;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    border: 1px solid #999;
+    overflow: hidden;
+    display: block;
+}
+.buyNum .buyNum-add {
+	background: url(../img/d-icon.png) no-repeat -70px -25px;
+    top: 0;
+}
+.buyNum .buyNum-reduce {
+	background: url(../img/d-icon.png) no-repeat -70px -41px;
+    top: 17px;
+}
+.buyPro {
+    float: left;
+    color: #cc3333;
+    margin-left: 12px;
+}
+.bayBtnBox {
+    margin-bottom: 18px;
+    width: 587px;
+    overflow: hidden;
+    position: relative;
+}
+.infoBuy {
+    width: 550px;
+    padding-left: 64px;
+}
+.buyBtn {
+    display: inline-block;
+    width: 166px;
+    height: 38px;
+    border: 1px solid #ffcccc;
+    background: #cc3333;
+    color: #fff;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    margin-right: 12px;
+}
+.promptBox {
+    float: left;
+    width: 587px;
+    line-height: 30px;
+}
+.infoPrompt {
+    float: left;
+    width: 464px;
+    line-height: 30px;
+}
+.infoPrompt .dIcon{
+	background: url(../img/d-icon.png) no-repeat -211px -38px;
+	width: 13px;
+	height: 12px;
+	margin-right: 5px;
+} 
+.infoPrompt span{
+    float: left;
+    color: #999;
+    margin-right: 25px;
+    vertical-align: middle;
+}  
+/*售后信息*/
+.introOther {
+    float: left;
+    width: 200px;
+}
+.introLogo {
+    text-align: center;
+    padding: 0 15px;
+}
+.introP {
+    padding: 30px 0 20px;
+    border-bottom: 1px dotted #d7d7d7;
+}
+.introP a span{
+	color: #666;
+	display: inline-block;
+	line-height: 20px;
+	padding-top: 6px;
+}
+.jxzy {
+    font-style: normal;
+    display: block;
+    width: 54px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    background: #cf000e;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+.introSaf {
+    padding-left: 35px;
+}
+.introSaf ul {
+    padding-top: 10px;
+}
+.introSaf ul li {
+    padding-top: 14px;
+    line-height: 22px;
+}
+.introSaf ul li .safNam {
+    width: 146px;
+    position: relative;
+    height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.introSaf ul li .safCon {
+	width: 120px;
+    position: relative;
+    padding-left: 26px;
+    color: #999;
+    height: 22px;
+    overflow: hidden;
+}  
+.safNam img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.safNam strong {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-family: "宋体";
+    margin-left: 6px;
+} 
+.cusBgBox {
+    padding-left: 35px;
+}
+.cusBg {
+    height: 28px;
+    line-height: 28px;
+    background: #fafafa;
+    text-align: center;
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #e9e9e9;
+    font-size: 0;
+    width: 104px;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #666666;
+    font-family: "宋体";
+    position: relative;
+}
+.cusBg i {
+    width: 17px;
+    height: 22px;
+    background: url(../img/cus-2.png) no-repeat;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}    
+.cusBg span {
+    font-size: 12px;
+    color: #666;
+    margin-left: 5px;
+} 
+.showOther {
+    padding: 0 20px 0;
+    width: 440px;
+    height: 42px;
+    font-size: 12px;
+}
+.sOtherRight,
+.showCollect,
+.goodsNo {
+    float: left;
+}
+.showShare {
+    float: right;
+    margin-right: 15px;
+    position: relative;
+}
+.showShare i {
+    width: 15px;
+    height: 15px;
+    background: url(../img/d-icon.png) no-repeat -125px -1px;
+    margin: 2px 5px 0 0;
+}    
+.showCollect a {
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+}
+.showCollect i {
+    width: 13px;
+    height: 12px;
+    background: url(../img/d-icon.png) no-repeat -148px 0;
+    margin: 4px 4px 0 0;
+    overflow: hidden;
+}   			
