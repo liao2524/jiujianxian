@@ -1,0 +1,201 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	background-color: #ccc;
+}
+/*头部*/
+.header {
+    width: 100%;
+    background: #fff;
+    height: 88px;
+    box-shadow: 1px 2px 6px #e1e1e1;
+    z-index: 1;
+    position: relative;
+}
+.headContent {
+	width: 1000px;
+	height: 88px;
+	margin: 0 auto;
+}
+.headLogo {
+    float: left;
+    height: 63px;
+    margin-top: 15px;
+    width: 257px;
+}
+.headLogo .index {
+    width: 140px;
+    float: left;
+}
+.register {
+    float: right;
+    color: #999;
+    margin-top: 48px;
+    height: 14px;
+    line-height: 14px;
+}
+.register a{
+	color: #0066cc;
+    margin-left: 20px;
+    text-decoration: none;
+} 
+.register a:hover {
+    color: red;
+}
+.help {
+    width: 77px;
+    height: 14px;
+    line-height: 14px;
+    float: right;
+    display: inline;
+    margin: 48px 0 0 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+}
+.helptitl {
+    height: 14px;
+    position: relative;
+    z-index: 2;
+}
+.helptitl .icon{
+	float: left;
+    display: inline-block;
+    background-position: -23px 0;
+    width: 15px;
+    height: 14px;
+    background: url(../img/logo.png) no-repeat 20px 0;
+}
+.helptitl span {
+    float: left;
+    display: inline-block;
+    color: #666;
+    margin-right: 6px;
+}
+.helpNav{
+	display: none;
+	position: absolute;
+	border: 1px solid #ccc;
+	top: -6px;
+	left: -10px;
+	width: 85px;
+	z-index: 1;
+	padding-top: 26px;
+}
+.helpNav li {
+    border-top: 1px dotted #ccc;
+    padding-left: 10px;
+    height: 24px;
+    line-height: 24px;
+    background: #fff;
+}
+.helpNav li a {
+    color: #999;
+}
+/*内容*/
+.content{
+    padding-top: 70px;
+}
+.window {
+    width: 1000px;
+	height: 600px;
+	padding: 0 0 50px;
+    margin: 0 auto;
+    background: #fff;
+    border: 3px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: 1px 6px 11px #e4e4e4;
+    position: relative;
+}
+.titBox{
+	width: 280px;
+	height: 34px;
+	position: absolute;
+	right: 15px;
+	top: -37px;
+}
+.regTit {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #fff;
+    padding: 0 15px;
+    border-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #ff9900;
+    margin-left: 6px;
+    vertical-align: top;
+    float: right;
+    cursor: pointer;
+    display: inline-block;
+}
+.titBox .regTit.on {
+    height: 35px;
+    border: 2px solid #eaeaea;
+    background: #fff;
+    color: #ff9900;
+    margin-bottom: -3px;
+    position: relative;
+    border-bottom: none;
+}
+/*注册主体界面*/
+.regBox{
+	width: 784px;
+	padding: 55px 0 0 125px;
+	width: 784px;
+	height: 386px;
+}
+.regAccInfor {
+    margin-top: 15px;
+}
+.regBox input {
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    border: 1px solid #dcdcdc;
+    font-size: 16px;
+}
+.regLabel {
+    width: 230px;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 30px;
+    float: left;
+}
+.regInputBox {
+    height: 42px;
+    width: 302px;
+    float: left;
+    position: relative;
+}
+.regInputBox .regIcon.accName {
+    background-position: -48px 2px;
+}
+.regInputBox .regIcon {
+	background: url(../img/regLogin-8.png) no-repeat 0 0;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    left: 12px;
+    top: 9px;
+}
+.regInput {
+    width: 255px;
+    padding-left: 45px;
+    background: none;
+    position: relative;
+    z-index: 3;
+    font-weight: 700;
+}
