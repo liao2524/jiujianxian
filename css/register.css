@@ -155,13 +155,14 @@ body{
 	height: 386px;
 }
 .regAccInfor {
+    widows: 784px;
+    height: 42px;
     margin-top: 15px;
 }
 .regBox input {
     height: 40px;
     line-height: 40px;
     color: #999;
-    border: 1px solid #dcdcdc;
     font-size: 16px;
 }
 .regLabel {
@@ -198,4 +199,84 @@ body{
     position: relative;
     z-index: 3;
     font-weight: 700;
+}
+.regLabel {
+    width: 230px;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 30px;
+    float: left;
+}
+.regIcon.accCap {
+    background-position: -422px 2px;
+}
+.regIcon.accCheck {
+    background-position: -259px 1px;
+}
+.regCheck input {
+    width: 101px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.checkButBox {
+    width: 148px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+.checkButBox .regCheckBut {
+    display: inline-block;
+    width: 146px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.regIcon.accPass {
+    background-position: -77px 2px;
+}
+.regAccBut {
+    widows: 524px;
+    height: 34px;
+    margin: 8px 0 0 260px;
+}
+.regAgreeBox {
+    line-height: 22px;
+    width: 302px;
+    position: relative;
+}
+.regAgreeBox .regAgree {
+    display: inline-block;
+    color: #999;
+    margin-left: 10px;
+    margin-top: 9px;
+    margin-bottom: 12px;
+}
+.regAgreeBox input{
+    widows: 13px;
+    height: 13px;   
+}
+.regAgreeBox .regSub {
+    width: 302px;
+    height: 42px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    background: #e10303;
+    cursor: pointer;
 }
